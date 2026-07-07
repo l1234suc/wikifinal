@@ -31,7 +31,6 @@ body::before{
 #field .g2{width:700px;height:700px;top:45%;right:-280px;background:radial-gradient(circle,rgba(127,175,122,.1),transparent 65%)}
 #field .g3{width:650px;height:650px;bottom:-280px;left:20%;background:radial-gradient(circle,rgba(183,168,232,.09),transparent 65%)}
 #progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--am),var(--sg),var(--lv));width:0%;z-index:1000;transition:width .08s linear}
-
 #nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(12,11,9,.85);backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid var(--bd);padding:0 3vw;height:60px;display:flex;align-items:center;gap:1.6rem}
 .brand{display:flex;align-items:center;gap:10px;flex-shrink:0;cursor:pointer}
 .brand svg{width:28px;height:28px;flex-shrink:0}
@@ -45,7 +44,6 @@ body::before{
 #navmeta{font-family:var(--fm);font-size:10px;color:var(--t3);flex-shrink:0;display:flex;align-items:center;gap:6px}
 #navmeta .dot{width:6px;height:6px;border-radius:50%;background:var(--sg);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-
 #searchWrap{position:relative;z-index:1;padding:130px 3vw 50px;max-width:1180px;margin:0 auto}
 .eyebrow{font-family:var(--fm);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--amh);margin-bottom:18px;display:flex;align-items:center;gap:12px}
 .eyebrow::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--amb),transparent)}
@@ -68,7 +66,6 @@ h1.hero em{font-style:italic;color:var(--amh);font-weight:400}
 .searchbar .kbd{font-family:var(--fm);font-size:10px;color:var(--t3);border:1px solid var(--bd2);border-radius:6px;padding:3px 8px;flex-shrink:0}
 #searchCount{font-family:var(--fm);font-size:11px;color:var(--amh);margin-top:12px;min-height:16px;opacity:0;transition:opacity .3s}
 #searchCount.show{opacity:1}
-
 .idxgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:10px;margin-top:18px}
 .idxcard{background:var(--s1);border:1px solid var(--bd);border-radius:14px;padding:18px 20px;cursor:pointer;transition:all .3s cubic-bezier(.2,.8,.2,1);position:relative;overflow:hidden}
 .idxcard::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--accent,var(--am));transform:scaleY(0);transform-origin:top;transition:transform .35s ease}
@@ -78,12 +75,10 @@ h1.hero em{font-style:italic;color:var(--amh);font-weight:400}
 .idxcard:hover .n{color:var(--accent,var(--am))}
 .idxcard .t{font-size:14px;font-weight:600;color:var(--t1);margin-top:5px}
 .idxcard .d{font-size:11.5px;color:var(--t2);margin-top:4px;line-height:1.5}
-
 .kpiband{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2px;background:var(--bd);border-radius:16px;overflow:hidden;margin:26px 0;border:1px solid var(--bd)}
 .kpi{background:var(--s1);padding:20px 18px;text-align:left}
 .kpi .v{font-family:var(--ff);font-size:1.95rem;font-weight:300;color:var(--amh);line-height:1;display:flex;align-items:baseline;gap:2px}
 .kpi .l{font-size:10.5px;color:var(--t2);margin-top:7px;line-height:1.5}
-
 .chapter{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:80px 3vw 30px;scroll-margin-top:75px}
 .chap-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
 .chap-num{font-family:var(--ff);font-size:14px;color:var(--t3)}
@@ -94,7 +89,6 @@ h3.sub-h{font-family:var(--ff);font-weight:400;font-size:1.25rem;color:var(--t1)
 .lede{font-size:.97rem;color:var(--t2);max-width:760px;line-height:1.8;margin-bottom:30px}
 .lede b{color:var(--t1);font-weight:600}
 hr.divider{border:none;height:1px;background:linear-gradient(90deg,var(--bd2),transparent);margin:50px 0 0}
-
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:20px 0}
 .card{background:var(--s1);border:1px solid var(--bd);border-radius:16px;padding:20px 22px;transition:all .3s ease}
 .card:hover{border-color:var(--bd3);background:var(--s2)}
@@ -103,13 +97,9 @@ hr.divider{border:none;height:1px;background:linear-gradient(90deg,var(--bd2),tr
 .card p{font-size:13px;color:var(--t2);line-height:1.68}
 .card p b{color:var(--t1);font-weight:600}
 .card cite{font-style:normal;color:var(--t3);font-size:11px}
-
-/* mindmap */
 #mindmap-wrap{margin:20px 0;position:relative}
 #mindmap-svg{width:100%;max-width:780px}
 .node-info{background:var(--s1);border:1px solid var(--lv);border-radius:12px;padding:14px 18px;margin-top:14px;min-height:50px;font-size:13px;color:var(--t1);line-height:1.6;transition:all .3s}
-
-/* persona */
 .persona{display:grid;grid-template-columns:190px 1fr;gap:28px;background:var(--s1);border:1px solid var(--bd2);border-radius:22px;padding:28px;margin:22px 0;align-items:start}
 .persona-portrait{width:100%;aspect-ratio:1;border-radius:18px;background:linear-gradient(150deg,var(--s3),var(--s2));position:relative;overflow:hidden;border:1px solid var(--bd2)}
 .persona-portrait svg{width:100%;height:100%}
@@ -119,7 +109,6 @@ hr.divider{border:none;height:1px;background:linear-gradient(90deg,var(--bd2),tr
 .tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
 .tag{font-size:10.5px;padding:4px 10px;border-radius:20px;background:var(--s2);border:1px solid var(--bd2);color:var(--t2)}
 .quote-strip{border-left:2px solid var(--amh);padding:9px 16px;margin:9px 0;font-style:italic;color:var(--t1);font-size:13.5px;line-height:1.6;background:var(--s2);border-radius:0 10px 10px 0}
-
 .tbl-wrap{overflow-x:auto;border:1px solid var(--bd);border-radius:14px;margin:20px 0}
 table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:620px}
 th{text-align:left;padding:12px 16px;background:var(--s2);color:var(--t2);font-weight:600;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;border-bottom:1px solid var(--bd2)}
@@ -129,7 +118,6 @@ tbody tr:hover{background:var(--s2)}
 .ok{color:var(--sgh)}.mid{color:var(--amh)}.no{color:var(--rd)}
 .hl-row td{background:rgba(200,134,30,.05)}
 td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
-
 .acc{border:1px solid var(--bd);border-radius:14px;margin-bottom:10px;overflow:hidden;background:var(--s1)}
 .acc-h{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;cursor:pointer;gap:16px}
 .acc-h:hover{background:var(--s2)}
@@ -153,14 +141,11 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 .kpi-mini{background:var(--s2);border:1px solid var(--bd2);border-radius:10px;padding:8px 14px}
 .kpi-mini .v{font-family:var(--ff);font-size:1.1rem;color:var(--amh)}
 .kpi-mini .l{font-size:9.5px;color:var(--t3)}
-
-/* RAT boxes (riskante Annahmen) */
 .rat{border-left:3px solid var(--rd);background:var(--s1);border-radius:0 16px 16px 0;padding:22px 24px;margin:16px 0}
 .rat .rat-title{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--rd);font-weight:700;margin-bottom:10px}
 .rat .rat-line{font-size:13px;line-height:1.7;color:var(--t2);margin-bottom:6px}
 .rat .rat-line b{color:var(--t1);font-weight:600}
 .rat .lbl-a{color:var(--amh)}.rat .lbl-b{color:var(--sgh)}
-
 .pricerow{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
 .pricecard{flex:1;min-width:180px;background:var(--s1);border:1px solid var(--bd);border-radius:18px;padding:24px 20px;transition:all .3s}
 .pricecard.hi{border-color:var(--am);background:linear-gradient(160deg,var(--aml),var(--s1) 60%);position:relative}
@@ -170,29 +155,23 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 .pval{font-family:var(--ff);font-size:2.2rem;font-weight:300;color:var(--t1)}
 .pval span{font-size:.8rem;color:var(--t3)}
 .pdesc{font-size:11.5px;color:var(--t2);margin-top:9px;line-height:1.6}
-
 .correction{background:linear-gradient(135deg,rgba(193,85,79,.09),rgba(193,85,79,.02));border:1px solid rgba(193,85,79,.4);border-radius:18px;padding:24px 26px;margin:22px 0;position:relative}
 .correction::before{content:'KORRIGIERT';position:absolute;top:-11px;left:22px;background:var(--rd);color:#170a09;font-size:9.5px;font-weight:800;letter-spacing:.06em;padding:4px 11px;border-radius:20px}
 .correction ul{margin:12px 0 0 18px;font-size:12.5px;color:var(--t2);line-height:1.85}
 .correction ul li b{color:var(--t1)}
-
 .math{font-family:var(--fm);background:var(--s0);border:1px solid var(--bd2);border-radius:12px;padding:18px 22px;margin:16px 0;font-size:12.5px;color:var(--sgh);line-height:1.95;overflow-x:auto}
 .math .res{color:var(--amh);font-weight:600}
-
 .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
 .tl-q{background:var(--s1);border:1px solid var(--bd);border-radius:16px;padding:18px;position:relative}
 .tl-q::before{content:attr(data-q);position:absolute;top:14px;right:16px;font-family:var(--ff);font-size:12px;color:var(--t3)}
 .tl-q .qtitle{font-size:11px;font-weight:700;color:var(--amh);margin-bottom:12px}
 .tl-q .row{display:flex;gap:8px;margin-bottom:9px;font-size:11px;color:var(--t2);line-height:1.5}
 .tl-q .row b{color:var(--t1);flex-shrink:0;font-size:8.5px;text-transform:uppercase;letter-spacing:.04em;width:52px}
-
 .risknet{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:20px 0}
 .riskcard{background:var(--s1);border:1px solid var(--bd);border-left:3px solid var(--rd);border-radius:0 14px 14px 0;padding:16px 18px}
 .riskcard .rt{font-weight:700;font-size:13px;margin-bottom:7px}
 .riskcard .rm{font-size:11.5px;color:var(--t2);line-height:1.6}
 .riskcard .rm b{color:var(--sgh)}
-
-/* prototype mockup */
 .proto-wrap{background:var(--s1);border:1px solid var(--bd2);border-radius:20px;padding:4px;margin:22px 0;overflow:hidden}
 .proto-tabs{display:flex;gap:4px;padding:10px 10px 0}
 .proto-tab{font-size:11px;font-weight:600;color:var(--t3);padding:8px 14px;border-radius:9px 9px 0 0;cursor:pointer;transition:.2s}
@@ -208,8 +187,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 .proto-chip-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .proto-chip{background:var(--s1);border:1px solid var(--bd2);border-radius:8px;padding:6px 12px;font-size:11px;color:var(--t1);display:flex;align-items:center;gap:6px}
 .proto-dot{width:6px;height:6px;border-radius:50%}
-
-/* demo scene carousel — mirrors demo_prototype_final.html walkthrough */
 .demo-wrap{background:var(--s1);border:1px solid var(--bd2);border-radius:20px;padding:22px 24px;margin:22px 0}
 .demo-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
 .demo-count{font-family:var(--fm);font-size:11px;color:var(--t3)}
@@ -232,14 +209,10 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 .demo-btn{background:var(--s2);border:1px solid var(--bd2);border-radius:10px;padding:8px 16px;font-size:12px;color:var(--t1);cursor:pointer;font-family:var(--fb)}
 .demo-btn:hover{border-color:var(--amb);color:var(--amh)}
 @media(max-width:760px){.demo-body{grid-template-columns:1fr}}
-
-/* science table */
 .sci-grid{display:grid;gap:8px;margin:20px 0}
 .sci-row{display:grid;grid-template-columns:1fr 2.2fr;gap:14px;background:var(--s1);border:1px solid var(--bd);border-radius:10px;padding:14px 16px}
 .sci-feat{font-size:13px;font-weight:600;color:var(--sgh)}
 .sci-ref{font-size:12px;color:var(--t2);line-height:1.65}
-
-/* funding eligibility table*/
 .elig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px;margin:20px 0}
 .elig-card{background:var(--s1);border:1px solid var(--bd);border-radius:16px;padding:20px}
 .elig-h{font-size:13.5px;font-weight:700;color:var(--t1);margin-bottom:10px;display:flex;align-items:center;gap:8px}
@@ -247,8 +220,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 .elig-row{font-size:12px;color:var(--t2);line-height:1.7;margin-bottom:4px}
 .elig-row b{color:var(--t1)}
 .check{color:var(--sgh);font-weight:700}
-
-/* break-even chart & scenarios */
 .chart-wrap{background:var(--s1);border:1px solid var(--bd2);border-radius:18px;padding:22px 24px;margin:22px 0}
 .chart-legend{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:8px}
 .chart-legend .li{display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--t2)}
@@ -268,7 +239,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 .scenario-card.worst .scenario-result{color:var(--rd)}
 .scenario-card.base .scenario-result{color:var(--amh)}
 .scenario-card.best .scenario-result{color:var(--sgh)}
-
 #refs{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:50px 3vw 120px}
 .refs-toggle{display:flex;align-items:center;gap:12px;cursor:pointer;padding:15px 20px;background:var(--s1);border:1px solid var(--bd2);border-radius:14px;font-size:12.5px;font-weight:600}
 .refs-toggle svg{width:15px;height:15px;transition:transform .3s}
@@ -277,7 +247,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 #refslist.open{max-height:3000px;margin-top:12px}
 .refitem{font-size:11.5px;color:var(--t2);line-height:1.8;padding:9px 0;border-bottom:1px dashed var(--bd)}
 .refitem b{color:var(--t1)}
-
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 #toTop{position:fixed;bottom:24px;right:24px;width:44px;height:44px;border-radius:50%;background:var(--s2);border:1px solid var(--bd3);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:800;opacity:0;pointer-events:none;transition:all .3s}
@@ -285,7 +254,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 #toTop:hover{background:var(--am);border-color:var(--am)}
 #toTop svg{width:17px;height:17px;color:var(--t1)}
 .hide{display:none !important}
-
 @media(max-width:760px){
   #chaplinks{display:none}
   .persona{grid-template-columns:1fr}
@@ -296,10 +264,8 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
 </style>
 </head>
 <body>
-
 <div id="field"><div class="g g1"></div><div class="g g2"></div><div class="g g3"></div></div>
 <div id="progress"></div>
-
 <nav id="nav">
   <div class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})">
     <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
@@ -327,25 +293,21 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
   </div>
   <div id="navmeta"><div class="dot"></div>v3 · Juli 2026</div>
 </nav>
-
 <section id="s0">
 <div id="searchWrap">
   <div class="eyebrow">Projektarbeit · Digitale Geschäftsmodelle & Strategien · WI:Digitales Management</div>
   <h1 class="hero reveal">Lernen ohne <em>Chaos.</em></h1>
   <p class="hero-sub reveal">Flowly ist unser KI-gestützter Lern-Workspace für Studierende mit ADHS. Statt fünf bis acht verschiedener Apps gibt es bei uns nur noch einen Ort zum Lernen. Dieses Wiki dokumentiert den ganzen Weg dahin: von der ersten Umfrage bis zur korrigierten Finanzplanung.</p>
-
   <div class="sdg-row reveal">
     <span class="sdg s4"><span class="num">4</span>Hochwertige Bildung</span>
     <span class="sdg s10"><span class="num">10</span>Weniger Ungleichheiten</span>
   </div>
-
   <div class="searchbar reveal">
     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
     <input id="searchInput" type="text" placeholder="Wiki durchsuchen, z. B. Persona, Break-even, Panik-Modus, RAT…" autocomplete="off">
     <span class="kbd">/</span>
   </div>
   <div id="searchCount"></div>
-
   <div class="idxgrid reveal">
     <div class="idxcard" data-target="s1" style="--accent:var(--rd)"><div class="n">01</div><div class="t">Problem & Persona</div><div class="d">Warum ADHS im Studium ein Strukturproblem ist, nicht ein Wissensproblem.</div></div>
     <div class="idxcard" data-target="s2" style="--accent:var(--lv)"><div class="n">02</div><div class="t">Vision & Geschäftsmodell</div><div class="d">Social Business Model Canvas, Strategie, Positionierung.</div></div>
@@ -357,12 +319,10 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     <div class="idxcard" data-target="steam" style="--accent:var(--am)"><div class="n">★</div><div class="t">Über uns</div><div class="d">Die fünf Köpfe hinter Flowly und ihre Rollen.</div></div>
     <div class="idxcard" data-target="s8" style="--accent:var(--lv)"><div class="n">+</div><div class="t">Anhang: eingesetzte KI-Tools</div><div class="d">Welche KI-Tools wo genutzt wurden, und wo sie an ihre Grenzen kamen.</div></div>
   </div>
-
   <div class="card reveal" style="--accent:var(--amh);margin-bottom:10px">
     <div class="k"><span class="dot"></span>Read me: so ist diese Wiki aufgebaut</div>
     <p>Diese Seite ist eine einzige durchgehende HTML-Datei, kein Server nötig, einfach im Browser öffnen. Oben rechts springt die Navigationsleiste direkt zu jedem Kapitel, die Suche filtert alle Karten, Tabellen und Testrunden live nach Stichwort. Kapitel 1–7 folgen dem Aufbau unseres finalen Pitches (Problem, Modell, Lösung, Testing, Markt, Finanzen, Go-to-Market), danach kommen „Über uns" und der Anhang zu den genutzten KI-Tools. Die klickbare Prototyp-Demo aus Kapitel 3 liegt zusätzlich live unter <a href="https://prototype-demo-vrti.vercel.app" target="_blank" rel="noopener" style="color:var(--amh)">prototype-demo-vrti.vercel.app</a>.</p>
   </div>
-
   <div class="kpiband reveal">
     <div class="kpi"><div class="v" data-count="170">0<span style="font-size:1.05rem">k</span></div><div class="l">ADHS-Studierende in Deutschland, geschätzt</div></div>
     <div class="kpi"><div class="v"><span data-count="49">0</span><span style="font-size:1.05rem">%</span></div><div class="l">Abschlussquote bei ADHS, gegenüber 59 % ohne</div></div>
@@ -371,13 +331,11 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
   </div>
 </div>
 </section>
-
 <!-- ===== CHAPTER 1 ===== -->
 <div class="chapter" id="s1" style="--accent:var(--rd)">
   <div class="chap-head reveal"><span class="chap-num">01</span><span class="chap-tag">Problem & Persona</span></div>
   <h2 class="chap-title reveal">Kein Wissensproblem.<br><em>Ein Strukturproblem.</em></h2>
   <p class="lede reveal">Zwischen 4 und 6 % der Studierenden in Deutschland leben mit ADHS, das sind grob 120.000 bis 170.000 Personen, mit auffälliger Häufung in MINT-Fächern (Hennig & IBS, 2023). Genau diese Fächer verlangen aber besonders viel aufeinander aufbauenden Stoff, also genau das, womit ADHS-Kognition am meisten kämpft. Die betroffenen Studierenden scheitern nicht am Verstehen der Inhalte. Sie scheitern daran, ihren Lernalltag zu organisieren.</p>
-
   <h3 class="sub-h reveal">Wo genau es hakt</h3>
   <div class="grid2 reveal">
     <div class="card" style="--accent:var(--rd)"><div class="k"><span class="dot"></span>Exekutive Dysfunktion</div><p>Planung, Priorisierung und Arbeitsgedächtnis sind bei ADHS biologisch eingeschränkt. „Reiß dich zusammen" ist da keine Option, weil das Problem nicht Motivation ist. <cite>(Álvarez-Godos et al., 2023)</cite></p></div>
@@ -385,7 +343,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     <div class="card" style="--accent:var(--am)"><div class="k"><span class="dot"></span>Zeitblindheit</div><p>Aufwand wird notorisch unterschätzt, nicht aus Faulheit, sondern weil das Zeitgefühl fehlt. Das führt dazu, dass viele erst kurz vor der Klausur wirklich anfangen.</p></div>
     <div class="card" style="--accent:var(--sg)"><div class="k"><span class="dot"></span>Status quo der Tools</div><p>Quizlet, Anki, Notion und Co. lösen je ein Teilstück. Damit verschiebt sich das Fragmentierungsproblem nur auf die Werkzeug-Ebene, gelöst ist es nicht.</p></div>
   </div>
-
   <h3 class="sub-h reveal">Die Problem-Landkarte</h3>
   <p class="lede reveal" style="margin-bottom:6px">Klick auf einen Knoten für die Quelle dahinter.</p>
   <div id="mindmap-wrap" class="reveal">
@@ -421,10 +378,8 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     </svg>
     <div class="node-info" id="node-info">Klick auf einen Knoten, um die Quelle dahinter zu sehen.</div>
   </div>
-
   <h3 class="sub-h reveal">Unsere Recherche dazu</h3>
   <p class="lede reveal">Bevor wir irgendetwas gebaut haben, haben wir zuerst nachgelesen und gefragt. Wir haben rund 16 wissenschaftliche Quellen zu ADHS im Studium ausgewertet (u. a. DSW, 2024; DuPaul et al., 2021; Finelli & Carroll, 2021), dazu eine eigene Querschnittsumfrage unter Studierenden verschiedener Fachrichtungen durchgeführt (Google Forms, n=24, Juni 2026), um zu prüfen, ob unser Bauchgefühl zur App-Fragmentierung überhaupt stimmt. Erst danach haben wir angefangen, an einer Lösung zu bauen. Details zur Methodik der einzelnen Testrunden stehen in Kapitel 4.</p>
-
   <h3 class="sub-h reveal">Persona: Vicky</h3>
   <div class="persona reveal">
     <div>
@@ -443,13 +398,11 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     </div>
   </div>
 </div>
-
 <!-- ===== CHAPTER 2 ===== -->
 <div class="chapter" id="s2" style="--accent:var(--lv)">
   <div class="chap-head reveal"><span class="chap-num">02</span><span class="chap-tag" style="color:var(--lvh)">Geschäftsmodell</span></div>
   <h2 class="chap-title reveal">Vision, Strategie & <em style="color:var(--lvh)">Social Business Model</em></h2>
   <p class="lede reveal">Vision auf 10 bis 20 Jahre: ein Studium, in dem ADHS-MINT-Studierende nicht an fehlender Struktur scheitern. Mission auf 3 bis 5 Jahre: eine Lernumgebung bauen, die Lernen klar, strukturiert und machbar macht. Nicht mehr Inhalte, nicht mehr Tools, sondern ein zentrales System.</p>
-
   <div class="tbl-wrap reveal">
     <table>
       <thead><tr><th>Baustein</th><th>Was drin steht</th></tr></thead>
@@ -468,13 +421,11 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     </table>
   </div>
 </div>
-
 <!-- ===== CHAPTER 3 ===== -->
 <div class="chapter" id="s3" style="--accent:var(--sg)">
   <div class="chap-head reveal"><span class="chap-num">03</span><span class="chap-tag" style="color:var(--sgh)">Lösung & Prototyp</span></div>
   <h2 class="chap-title reveal">Ein Ort. Alle Materialien.<br><em style="color:var(--sgh)">Ein klarer Weg ins Lernen.</em></h2>
   <p class="lede reveal">Flowly bringt die drei Lernphasen, Verstehen, Behalten, Abrufen, in einen einzigen Ablauf. Kein Tab-Wechsel, kein Kontextverlust. Unten ist der deployte Prototyp (Flowly-projekt.vercel.app) Screen für Screen, so wie er im letzten Nutzertest tatsächlich lief.</p>
-
   <div class="demo-wrap reveal">
     <div class="demo-top">
       <span class="demo-count" id="demoCount">Szene 1 / 7 · Flowly-projekt.vercel.app</span>
@@ -505,7 +456,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     </div>
   </div>
   <p class="lede reveal" style="margin-top:8px;font-size:12.5px">Diese Passage folgt eins zu eins unserem eigenen klickbaren Demo-Deck (<code>demo_prototype_final.html</code>), das wir auch für den Pitch genutzt haben, inklusive der Sprechernotizen und der wissenschaftlichen Belege pro Szene.</p>
-
   <h3 class="sub-h reveal">Jedes Feature hat eine Quelle</h3>
   <div class="sci-grid reveal">
     <div class="sci-row"><div class="sci-feat">Material-Hub</div><div class="sci-ref">Zentralisierte Struktur verhindert den Split-Attention-Effekt und entlastet die bei ADHS ohnehin eingeschränkten exekutiven Kontrollnetzwerke. <em>(Sweller, Cognitive Load Theory; Álvarez-Godos et al., 2023)</em></div></div>
@@ -515,20 +465,17 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     <div class="sci-row"><div class="sci-feat">Panik-Modus & Gamification</div><div class="sci-ref">ADHS betrifft primär das Belohnungssystem. Externe Dringlichkeit und unmittelbares Feedback (XP, Streaks) lösen aus, was intrinsische Motivation allein oft nicht schafft. <em>(Bettis et al., 2017; Gabriely et al., 2020)</em></div></div>
   </div>
 </div>
-
 <!-- ===== CHAPTER 4: TESTING ===== -->
 <div class="chapter" id="s4" style="--accent:var(--am)">
   <div class="chap-head reveal"><span class="chap-num">04</span><span class="chap-tag">Testing</span></div>
   <h2 class="chap-title reveal">Drei Testrunden.<br><em>Zwei Annahmen, bei denen wir falsch lagen.</em></h2>
   <p class="lede reveal">Wir haben nichts einfach angenommen, sondern in drei Runden getestet, jeweils mit klarer Methodik und einer dokumentierten Entscheidung am Ende: weitermachen oder Kurs ändern.</p>
-
   <div class="kpiband reveal">
     <div class="kpi"><div class="v"><span data-count="100">0</span><span style="font-size:1rem">%</span></div><div class="l">der ADHS-Zielgruppe stark überfordert durch App-Anzahl</div></div>
     <div class="kpi"><div class="v"><span data-count="22">0</span><span style="font-size:1rem">%</span></div><div class="l">der neurotypischen Kontrollgruppe, zum Vergleich</div></div>
     <div class="kpi"><div class="v"><span data-count="0">0</span></div><div class="l">Navigationsprobleme im Think-Aloud-Test</div></div>
     <div class="kpi"><div class="v"><span data-count="25">0</span><span style="font-size:1rem">€</span></div><div class="l">validierte maximale Zahlungsbereitschaft</div></div>
   </div>
-
   <div class="reveal">
     <div class="acc open">
       <div class="acc-h" onclick="toggleAcc(this.parentElement)">
@@ -573,10 +520,8 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
       </div></div>
     </div>
   </div>
-
   <h3 class="sub-h reveal">Unsere riskantesten Annahmen</h3>
   <p class="lede reveal">Zwei Annahmen haben sich im Testing als falsch oder zumindest zu einfach gedacht herausgestellt. Beide haben wir bewusst korrigiert, bevor sie zum Problem wurden.</p>
-
   <div class="rat reveal">
     <div class="rat-title">Riskante Annahme 1 · Technische Machbarkeit & Kostenstruktur</div>
     <div class="rat-line"><span class="lbl-a">Angenommen hatten wir:</span> dass ein datenschutzkonformes, lokal gehostetes GPU-Setup (z. B. Ollama auf einem eigenen Server) für das MVP zwingend nötig ist.</div>
@@ -590,13 +535,11 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     <div class="rat-line"><span class="lbl-b">Konsequenz:</span> Flowly muss klar als geschlossenes All-in-One-System kommuniziert werden, mit der KI im Zentrum, statt einzelne Features in Untermenüs zu verstecken. Preisanker ist ChatGPT Plus, nicht die Karteikarten-App.</div>
   </div>
 </div>
-
 <!-- ===== CHAPTER 5 ===== -->
 <div class="chapter" id="s5" style="--accent:var(--lv)">
   <div class="chap-head reveal"><span class="chap-num">05</span><span class="chap-tag" style="color:var(--lvh)">Wettbewerb</span></div>
   <h2 class="chap-title reveal">Alle lösen ein Problem.<br><em style="color:var(--lvh)">Keiner löst das richtige.</em></h2>
   <p class="lede reveal">Die Lücke im Markt ist keine fehlende Funktion, sondern eine fehlende Integration. Niemand verbindet KI-native Extraktion, einen dauerhaften Kontext-Tutor und ADHS-spezifisches Verhaltensdesign in einem Workspace.</p>
-
   <div class="tbl-wrap reveal">
     <table>
       <thead><tr><th>Tool</th><th>Stärke</th><th>Kern-Schwäche bei ADHS</th><th>Struktur</th><th>KI</th><th>Fokus</th></tr></thead>
@@ -609,19 +552,16 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
       </tbody>
     </table>
   </div>
-
   <div class="grid2 reveal">
     <div class="card" style="--accent:var(--am)"><div class="k"><span class="dot"></span>Digitale Generalisten</div><p>ChatGPT & Co. haben hohen wahrgenommenen Wert (Preisanker im Testing), aber kein Konzept-Tracking und keinen dauerhaften Fach-Kontext.</p></div>
     <div class="card" style="--accent:var(--sg)"><div class="k"><span class="dot"></span>Institutionelle Angebote</div><p>Beratungsstellen an Hochschulen sind wichtig, aber nicht skalierbar, dafür ein natürlicher B2B-Partner (siehe Kapitel 6).</p></div>
   </div>
 </div>
-
 <!-- ===== CHAPTER 6: FINANZEN ===== -->
 <div class="chapter" id="s6" style="--accent:var(--rd)">
   <div class="chap-head reveal"><span class="chap-num">06</span><span class="chap-tag" style="color:var(--rd)">Finanzen & Förderung</span></div>
   <h2 class="chap-title reveal">Was wir am ursprünglichen Zahlenwerk<br><em style="color:#E8837E">korrigiert haben</em></h2>
   <p class="lede reveal">Unser erstes Finanzkapitel hatte handfeste Denkfehler. Statt sie zu verstecken, dokumentieren wir hier genau, was falsch war und wie wir es gerade gerückt haben.</p>
-
   <div class="correction reveal">
     <ul>
       <li><b>Fördermittel passte nicht zur Größenordnung:</b> Der High-Tech Gründerfonds investiert normalerweise 500.000 € bis 5 Mio. € in Deep-Tech-Start-ups, unser MVP-Budget liegt bei 30.000 bis 50.000 €. Das ist ein Faktor 10 bis 100 daneben.</li>
@@ -630,11 +570,10 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
       <li><b>Uneinheitliche Preise:</b> In unseren eigenen Unterlagen standen 8,99 €/5,99 € an einer Stelle und 8,89 € an einer anderen, das haben wir vereinheitlicht.</li>
     </ul>
   </div>
-
   <h3 class="sub-h reveal">Personalstruktur: Duales Studium und Teilzeit als bewusstes Risikomanagement</h3>
   <p class="lede reveal">Da alle fünf Gründer:innen parallel im dualen Studium bzw. anderweitig berufstätig sind, legen wir die operative Kapazität pro Person in der Initialphase bewusst auf maximal 8 Stunden pro Woche fest. Das ist keine Notlösung, sondern eine strategisch gewählte, risikominimierte Ressourcenstruktur: Die Personalkosten bleiben auf Basis des gesetzlichen Mindestlohns 2026 (12,82 €/Stunde) über fünf Minijobs mit je rund 450 € Basislohn kalkulierbar, planbar und krisenfest, unabhängig davon, wie schnell das Nutzerwachstum tatsächlich eintritt.</p>
-
   <h3 class="sub-h reveal">Kostentabelle, mit Herleitung, für unser 5er-Team</h3>
+  <div class="tbl-wrap reveal">
     <table>
       <thead><tr><th>Kostenposition</th><th>Betrag / Monat</th><th>Herleitung & Quelle</th></tr></thead>
       <tbody>
@@ -646,7 +585,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
       </tbody>
     </table>
   </div>
-
   <h3 class="sub-h reveal">Kosten pro Nutzer:in, vier getrennte Hebel</h3>
   <p class="lede reveal">Die variablen Kosten pro Nutzer:in werden durch drei technische Effizienzhebel gezielt niedrig gehalten: eine systematische Modell-Kaskadierung, bei der Standardanfragen über kosteneffiziente Modelle wie GPT-4o-mini oder Mistral laufen und nur komplexe Anfragen teurere Modelle erreichen, konsequentes Prompt-Caching zur Reduktion wiederholter Token-Kosten, sowie eine gezielte Incentivierung der SEPA-Lastschrift beim Jahresabo, die Zahlungsausfälle und Transaktionsgebühren senkt.</p>
   <div class="tbl-wrap reveal">
@@ -661,7 +599,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
       </tbody>
     </table>
   </div>
-
   <h3 class="sub-h reveal">Wofür wir uns realistisch qualifizieren</h3>
   <div class="elig-grid reveal">
     <div class="elig-card">
@@ -685,7 +622,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
       <div class="elig-row"><span class="check">✓</span> Erfüllt: deployter Prototyp mit 4,0/5 Testergebnis (n=10) ist genau dieser Nachweis.</div>
     </div>
   </div>
-
   <h3 class="sub-h reveal">Preismodell, drei Stufen</h3>
   <div class="pricerow reveal">
     <div class="pricecard"><div class="ptier">Free</div><div class="pval">0<span>€</span></div><div class="pdesc">Voller Material-Hub plus begrenzte KI-Extraktionen, dauerhaft kostenlos, das ist uns wichtig.</div></div>
@@ -693,7 +629,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     <div class="pricecard"><div class="ptier">Premium Monatlich</div><div class="pval">7,99<span>€/Mo.</span></div><div class="pdesc">Maximale Flexibilität, monatlich kündbar.</div></div>
     <div class="pricecard" style="border-color:var(--lv);background:linear-gradient(160deg,var(--lvl),var(--s1) 60%)"><div class="ptier" style="color:var(--lvh)">Premium Max</div><div class="pval">14,99<span>€/Mo.</span></div><div class="pdesc">Wirklich unbegrenzte Nutzung ohne Fair-Use-Deckel, priorisierte KI-Antwortzeit, größeres Kontextfenster für den KI-Tutor, analog zu Claude Max. Für Vielnutzer:innen in Klausurphasen gedacht.</div></div>
   </div>
-
   <h3 class="sub-h reveal">Caps & Credits im Detail</h3>
   <div class="tbl-wrap reveal">
     <table>
@@ -706,7 +641,6 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
     </table>
   </div>
   <p class="lede reveal" style="font-size:12.5px">Premium Max trägt sich selbst mit deutlichem Aufschlag (14,99 € − 4,00 € = 10,99 € Deckungsbeitrag) und wirkt damit als Quersubvention für die kostenlose Free-Stufe sowie für die laufende Wirkungsmessung aus Kapitel 2, ohne dass Fair-Use-Deckel bei normalen Premium-Nutzer:innen verändert werden müssen.</p>
-
   <h3 class="sub-h reveal">Kundenakquisitionskosten (CAC), Retention-Kosten und Konversionsrate</h3>
   <p class="lede reveal"> Was kostet es, eine Person überhaupt als registrierte Nutzer:in zu gewinnen, was kostet es laufend, eine zahlende Person zu halten, und mit welcher Rate wird aus registrierten Nutzer:innen überhaupt zahlende Kundschaft.</p>
   <div class="tbl-wrap reveal">
@@ -719,11 +653,9 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
         <tr class="hl-row"><td><b>LTV/CAC-Verhältnis</b> (Premium, Jahresabo)</td><td>≈ 60:1</td><td>Bei durchschnittlich 8 Monaten aktiver Nutzung und 5,19 € WACM ergibt sich ein LTV von ≈ 41,50 € gegenüber 1,20 € CAC, deutlich über dem in der Branche als gesund geltenden Verhältnis von 3:1.</td></tr>
       </tbody>
     </table>
-    
   </div>
   <h3 class="sub-h reveal">Marktgröße: TAM, SAM & SOM</h3>
   <p class="lede reveal">Unsere Marktgrößen leiten sich aus der ADHS-Prävalenz an Hochschulen ab und bilden das Fundament für unsere kombinierte B2B/B2C-Strategie. Das operative Umsatzziel (SOM) ist exakt auf den Break-even-Punkt im zweiten Geschäftsjahr kalibriert.</p>
-
   <div class="kpiband reveal">
     <div class="kpi">
       <div class="v"><span data-count="174">0</span><span style="font-size:1rem">k</span></div>
@@ -742,10 +674,8 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
       <div class="l"><b>SOM (B2B):</b> Institutionslizenzen für Break-even</div>
     </div>
   </div>
-
   <h3 class="sub-h reveal">Warum ein reines B2C-Modell strukturell nicht trägt</h3>
   <p class="lede reveal">Der Zielmarkt von Flowly, ADHS-MINT-Studierende in Deutschland, umfasst geschätzt 60.000 bis 80.000 Personen. Ein Finanzierungsmodell, das den Break-even ausschließlich über B2C-Einzelabos erreichen will, würde einen Großteil dieses gesamten Zielmarkts als zahlende Einzelnutzer:innen voraussetzen, das ist kein tragfähiges Modell für ein Nischenprodukt. Aus diesem Grund kombiniert unser Finanzierungskonzept von Beginn an zwei komplementäre Erlösquellen: planbare, volumenstarke B2B-Institutionslizenzen an Hochschulen und Studierendenwerke, ergänzt durch ein organisch wachsendes B2C-Freemium-Segment. Diese Kombination reduziert die B2C-Marktdurchdringung, die für den Break-even nötig ist, auf einen realistischen Anteil des Zielmarkts.</p>
-
   <h3 class="sub-h reveal">B2B im Vergleich: Flowly vs. OneTutor</h3>
   <p class="lede reveal">Zur Kalibrierung unseres B2B-Preismodells haben wir OneTutor als reinen B2B-Anbieter für KI-gestütztes Tutoring an Hochschulen recherchiert und direkt per LinkedIn kontaktiert, um belastbare Institutionspreise zu erhalten. Wir haben keine Rückmeldung erhalten, deshalb basiert die OneTutor-Zeile unten auf einer Recherche-Schätzung von Gemini Research Extended und ist als Näherungswert, nicht als bestätigte Zahl, zu lesen.</p>
   <div class="tbl-wrap reveal">
@@ -757,44 +687,33 @@ td small{color:var(--t3);font-size:10.5px;display:block;margin-top:3px}
       </tbody>
     </table>
   </div>
-
   <h3 class="sub-h reveal">Break-even-Rechnung, kombiniertes B2B/B2C-Modell (Jahr 2)</h3>
   <p class="lede reveal">Die Gewinnschwelle wird im zweiten Geschäftsjahr durch die Kombination aus institutionellen B2B-Lizenzen und einem moderat wachsenden B2C-Freemium-Segment erreicht.</p>
   <div class="math reveal">
 FC (Fixkosten/Monat, 5-Personen-Team) = 2.951,33 € (Gehälter) + 410 € (AWS) + 10 € (Stores) + 60 € (Compliance)
 FC = <span class="res">3.431,33 €/Monat</span>
-
 WACM (B2C) = 0,70 × (7,99 € − 2,20 €) + 0,30 × (5,99 € − 2,20 €) = 0,70 × 5,79 € + 0,30 × 3,79 €
 WACM = <span class="res">5,19 € je zahlende:r Nutzer:in</span>
-
 B2B-Deckungsbeitrag = 5 Institutionslizenzen × 3.500 €/Jahr = 17.500 €/Jahr ≈ <span class="res">1.458,33 €/Monat</span>
-
 Verbleibende monatliche Deckungslücke = FC − B2B-Deckungsbeitrag = 3.431,33 € − 1.458,33 € = <span class="res">1.973,00 €</span>
-
 Benötigte zahlende B2C-Nutzer:innen N* = 1.973,00 € / 5,19 € ≈ <span class="res">380 zahlende Nutzer:innen</span>
-
 → bei 3 % Freemium-Konversion entspricht dies rund <span class="res">12.667 registrierten Studierenden</span>
 → bezogen auf den Zielmarkt von 60.000–80.000 ADHS-MINT-Studierenden entspricht dies einer Marktdurchdringung von ca. 15–20 %, realistisch erreichbar in 18–24 Monaten
   </div>
-
   <div class="kpiband reveal">
     <div class="kpi"><div class="v"><span data-count="3431">0</span><span style="font-size:1rem">€</span></div><div class="l">Fixkosten pro Monat, 5-Personen-Team</div></div>
     <div class="kpi"><div class="v"><span data-count="5">0</span></div><div class="l">Institutionslizenzen für die Gewinnschwelle</div></div>
     <div class="kpi"><div class="v"><span data-count="380">0</span></div><div class="l">zahlende B2C-Nutzer:innen zusätzlich nötig</div></div>
     <div class="kpi"><div class="v"><span data-count="12667">0</span></div><div class="l">entsprechend registrierte Nutzer:innen bei 3 % Konversion</div></div>
   </div>
-
   <h3 class="sub-h reveal">Profitmarge am Break-even-Punkt</h3>
   <div class="math reveal">
 Monatsumsatz am Break-even = B2B-Erlöse (1.458,33 €) + B2C-Erlöse (380 × 7,39 € Ø-Preis) = 1.458,33 € + 2.808,20 €
 Monatsumsatz = <span class="res">4.266,53 €</span>
-
 Monatliche Gesamtkosten = FC (3.431,33 €) + variable Kosten (380 × 2,20 €) = 3.431,33 € + 836,00 €
 Monatliche Gesamtkosten = <span class="res">4.267,33 €</span>
-
 Profitmarge am definierten Break-even-Punkt ≈ <span class="res">0 %</span>, per Definition, da N* genau auf Kostendeckung kalibriert ist. Profit entsteht erst mit Wachstum über diesen Punkt hinaus, siehe Szenarien unten.
   </div>
-
   <h3 class="sub-h reveal">Break-even grafisch</h3>
   <p class="lede reveal">Die Grafik hält die 5 B2B-Institutionslizenzen konstant und zeigt, wie Umsatz und Gesamtkosten mit wachsender Zahl zahlender B2C-Nutzer:innen auseinanderlaufen, mit dem Schnittpunkt bei rund 380 Nutzer:innen.</p>
   <div class="chart-wrap reveal">
@@ -804,28 +723,22 @@ Profitmarge am definierten Break-even-Punkt ≈ <span class="res">0 %</span>, pe
       <div class="li"><span class="sw" style="background:var(--amh)"></span>Break-even bei 380 Nutzer:innen</div>
     </div>
     <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
-      <!-- axes -->
       <line x1="60" y1="20" x2="60" y2="270" stroke="var(--bd2)" stroke-width="1"/>
       <line x1="60" y1="270" x2="670" y2="270" stroke="var(--bd2)" stroke-width="1"/>
       <text x="365" y="305" text-anchor="middle" fill="var(--t3)" font-size="11" font-family="Figtree">zahlende B2C-Nutzer:innen</text>
       <text x="20" y="150" text-anchor="middle" fill="var(--t3)" font-size="11" font-family="Figtree" transform="rotate(-90 20 150)">€ / Monat</text>
-      <!-- gridlines x -->
       <text x="60" y="285" text-anchor="middle" fill="var(--t3)" font-size="10">0</text>
       <text x="212" y="285" text-anchor="middle" fill="var(--t3)" font-size="10">200</text>
       <text x="365" y="285" text-anchor="middle" fill="var(--t3)" font-size="10">380</text>
       <text x="517" y="285" text-anchor="middle" fill="var(--t3)" font-size="10">600</text>
       <text x="670" y="285" text-anchor="middle" fill="var(--t3)" font-size="10">800</text>
-      <!-- cost line: 3431.33 + 2.20x, x:0-800 -> y:3431.33-5191.33, scale to px -->
       <polyline points="60,222 212,206 365,190 517,174 670,158" fill="none" stroke="var(--rd)" stroke-width="2.5"/>
-      <!-- revenue line: 1458.33 + 7.39x -->
       <polyline points="60,251 212,229 365,207 517,184 670,161" fill="none" stroke="var(--sg)" stroke-width="2.5"/>
-      <!-- break-even marker -->
       <line x1="365" y1="20" x2="365" y2="270" stroke="var(--amh)" stroke-width="1" stroke-dasharray="4 4"/>
       <circle cx="365" cy="198" r="5" fill="var(--amh)"/>
       <text x="375" y="195" fill="var(--amh)" font-size="11" font-family="Figtree" font-weight="600">≈ 4.267 €</text>
     </svg>
   </div>
-
   <h3 class="sub-h reveal">Szenarien: Worst Case, Base Case, Best Case</h3>
   <p class="lede reveal">Alle drei Szenarien beziehen sich auf den Stand Ende Jahr 2, bei gleichbleibenden Fixkosten von 3.431,33 €/Monat und gleichbleibendem Preismodell.</p>
   <div class="scenario-grid reveal">
@@ -855,24 +768,20 @@ Profitmarge am definierten Break-even-Punkt ≈ <span class="res">0 %</span>, pe
     </div>
   </div>
   <p class="lede reveal" style="font-size:12.5px">Der Worst Case ist bewusst kein Abbruchkriterium, sondern der Grund, warum wir Jahr 1 fördermittelfinanziert planen: der Puffer aus EXIST- und Social-Impact-Mitteln (Kapitel 5) reicht aus, um auch ein verzögertes zweites Jahr ohne Liquiditätsengpass zu überstehen.</p>
-
   <h3 class="sub-h reveal">Umsetzung der Finanzierung</h3>
   <p class="lede reveal">Das Fünferteam kalkuliert mit 3.431,33 € Fixkosten im Monat, also rund 41.176 € im Jahr, zuzüglich einmaliger MVP-Entwicklungskosten von 30.000 bis 50.000 €. Das EXIST-Gründerstipendium deckt laut Förderrichtlinie bis zu drei Gründer:innen mit je bis zu rund 2.500 bis 3.000 €/Monat für 12 Monate ab, das entspricht ungefähr 90.000 bis 108.000 € für drei der fünf Teammitglieder und übersteigt damit die reinen Personalkosten des gesamten Teams für ein Jahr deutlich. Für die verbleibenden zwei Personen (Co-Heads Marketing, Operations und Finance) sind Werkstudierendenverträge oder eine ergänzende Förderung über einen Social-Impact-Fonds vorgesehen. Jahr 1 ist damit im Wesentlichen fördermittelfinanziert; ab Jahr 2 muss der Umsatz aus fünf Institutionslizenzen und einer moderaten B2C-Basis nicht das gesamte Unternehmen tragen, sondern lediglich die nach Förderende verbleibende Lücke schließen. Konkret eingereicht würde diese Kombination aus EXIST-Gründerstipendium, ergänzender Social-Impact-Förderung und Crowdfunding für den MVP-Anteil, statt eines einzelnen Investors oder einer auf Marktsättigung ausgelegten B2C-Strategie.</p>
 </div>
-
 <!-- ===== CHAPTER 7 ===== -->
 <div class="chapter" id="s7" style="--accent:var(--sg)">
   <div class="chap-head reveal"><span class="chap-num">07</span><span class="chap-tag" style="color:var(--sgh)">Go-to-Market</span></div>
   <h2 class="chap-title reveal">Wachsen ohne <em style="color:var(--sgh)">Werbebudget</em></h2>
   <p class="lede reveal">Graswurzel zuerst: die Kanäle mit dem stärksten Signal aus dem Testing sind gleichzeitig die günstigsten.</p>
-
   <div style="border: 1px solid rgba(127,175,122,.4); background: linear-gradient(135deg,rgba(127,175,122,.09),rgba(127,175,122,.02)); padding: 15px; border-radius: 6px;">
     <div style="font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--sgh);font-weight:700;margin-bottom:10px">Warum Flowly 100% werbefrei bleibt</div>
     <p style="font-size:12.5px;color:var(--t2);line-height:1.75;margin:0;">
-Klassische In-App-Werbung lebt von der gezielten Unterbrechung. Für unsere Zielgruppe: Studierende mit ADHS, sind diese Mikro-Ablenkungen **fatal**. Ein Tool, das mentalen Fokus verspricht, darf nicht gleichzeitig die Aufmerksamkeit seiner Nutzer verkaufen.
+Klassische In-App-Werbung lebt von der gezielten Unterbrechung. Für unsere Zielgruppe: Studierende mit ADHS, sind diese Mikro-Ablenkungen fatal. Ein Tool, das mentalen Fokus verspricht, darf nicht gleichzeitig die Aufmerksamkeit seiner Nutzer verkaufen.
 Deswegen setzen wir auf ein sauberes, werbefreies Ökosystem, finanziert durch Abonnements und institutionelle Lizenzen. Unser Wachstum treiben wir nicht durch teure, gekaufte Reichweite, sondern organisch durch unsere Community (Graswurzel-Ansatz).</p>
 </div>
-
   <h3 class="sub-h reveal">Marketingstrategie im Detail</h3>
   <p class="lede reveal">Statt eines pauschalen Marketingbudgets ordnen wir jedem Kanal ein reales Kostenniveau und einen erwarteten Effekt zu, priorisiert nach dem stärksten Signal aus dem Testing.</p>
   <div class="tbl-wrap reveal">
@@ -886,7 +795,6 @@ Deswegen setzen wir auf ein sauberes, werbefreies Ökosystem, finanziert durch A
       </tbody>
     </table>
   </div>
-
   <div class="timeline reveal">
     <div class="tl-q" data-q="Q1"><div class="qtitle">Monate 1–3</div>
       <div class="row"><b>Produkt</b>Mobile-Ansicht & Kalender-Integration fertigstellen</div>
@@ -910,10 +818,8 @@ Deswegen setzen wir auf ein sauberes, werbefreies Ökosystem, finanziert durch A
     </div>
   </div>
   <p class="lede reveal" style="font-size:12.5px">Premium Max wird bewusst erst nach dem MVP-Launch eingeführt, sobald genug Nutzungsdaten vorliegen, um das Fair-Use-Verhältnis realistisch zu kalibrieren, nicht als Tarif am ersten Tag.</p>
-
   <h3 class="sub-h reveal">Blick nach vorn: B2B-Erweiterung</h3>
   <p class="lede reveal">Über das Hochschulumfeld hinaus ist eine Kooperation mit Arztpraxen, Kliniken und spezialisierten ADHS-Zentren als zusätzlicher Vertriebskanal denkbar, sobald die Kernnutzerbasis an Hochschulen steht. Das war schon in unserer ursprünglichen AARRR-Planung angelegt und bleibt strategisch relevant für die Zeit nach Jahr 2.</p>
-
   <h3 class="sub-h reveal">Risiko-Netzwerk</h3>
   <div class="risknet reveal">
     <div class="riskcard"><div class="rt">Zu wenige aktive Nutzer</div><div class="rm">→ <b>Gegenmaßnahme:</b> Community-first-Marketing, Ambassador-Programm.</div></div>
@@ -923,17 +829,14 @@ Deswegen setzen wir auf ein sauberes, werbefreies Ökosystem, finanziert durch A
     <div class="riskcard"><div class="rt">Institutionelle Trägheit</div><div class="rm">→ <b>Gegenmaßnahme:</b> kostenlose Pilotpartnerschaften als Türöffner.</div></div>
     <div class="riskcard"><div class="rt">Hoher Wettbewerbsdruck</div><div class="rm">→ <b>Gegenmaßnahme:</b> klare Positionierung auf MINT/ADHS statt Generalisierung.</div></div>
   </div>
-
   <h3 class="sub-h reveal">Wo wir ehrlich sein müssen</h3>
   <p class="lede reveal">Alle drei Testrunden (n=24, n=4, n=10) sind klein und stammen aus bereits ADHS-affinen Communities. Die genannte Zahlungsbereitschaft von bis zu 25 €/Monat ist vermutlich eher eine Obergrenze engagierter Early Adopter als ein realistischer Durchschnitt. Unser korrigiertes Finanzmodell braucht eine Freemium-Basis, die etwa 30-mal größer ist als die Break-even-Zielgruppe, bleibt organisches Wachstum aus, gibt es kein Werbebudget als Rückfalloption. Der B2B-Kanal ist deshalb für uns keine nette Option, sondern für Jahr 2 eine Notwendigkeit.</p>
 </div>
-
 <!-- ===== ÜBER UNS ===== -->
 <div class="chapter" id="steam" style="--accent:var(--am)">
   <div class="chap-head reveal"><span class="chap-num">★</span><span class="chap-tag">Team</span></div>
   <h2 class="chap-title reveal">Die fünf Köpfe <em>hinter Flowly</em></h2>
   <p class="lede reveal">Wir sind fünf Studierende der Wirtschaftsinformatik und haben Flowly aus genau der Erfahrung heraus entwickelt, die auch Vicky beschreibt. Vorgestellt haben wir uns so auch in unserer finalen Pitch-Präsentation.</p>
-
  <div class="grid2 reveal">
     <div class="card" style="--accent:var(--sg)">
       <div class="k"><span class="dot"></span>Ronja Nehmeier</div>
@@ -952,13 +855,12 @@ Deswegen setzen wir auf ein sauberes, werbefreies Ökosystem, finanziert durch A
       <p><b>Head of UX, Concept & Finance.</b> Verantwortlich für das visuelle Konzept von Flowly, die Feature-Spezifikation und den Aufbau dieses Wikis sowie die Restrukturierung der Finanzierungs- und Monetarisierungspläne in Kapitel 6.</p>
     </div>
 </div>
-
+</div>
 <!-- ===== ANHANG: KI-TOOLS ===== -->
 <div class="chapter" id="s8" style="--accent:var(--lv)">
   <div class="chap-head reveal"><span class="chap-num">+</span><span class="chap-tag" style="color:var(--lvh)">Anhang</span></div>
   <h2 class="chap-title reveal">Welche KI-Tools wir <em style="color:var(--lvh)">wirklich benutzt haben</em></h2>
   <p class="lede reveal">Transparenz gehört für uns dazu: Diese Wiki, die Recherche und Teile des Konzepts sind mit Unterstützung mehrerer KI-Tools entstanden. Wir listen hier konkret auf, welches Tool wofür genutzt wurde, inklusive der Stelle, an der ein Tool sich als schlicht nicht geeignet herausgestellt hat.</p>
-
   <div class="grid2 reveal">
     <div class="card" style="--accent:var(--lv)">
       <div class="k"><span class="dot"></span>Claude (Anthropic)</div>
@@ -981,7 +883,6 @@ Deswegen setzen wir auf ein sauberes, werbefreies Ökosystem, finanziert durch A
       <p>Für die eigentliche wissenschaftliche Literaturrecherche haben wir bewusst kein KI-Tool, sondern Google Scholar genutzt, um die rund 16 peer-reviewed Quellen zu ADHS im Studium direkt an der Primärliteratur zu prüfen, statt uns auf KI-generierte Zusammenfassungen von Studien zu verlassen. <cite>(Google Scholar, o. D.)</cite></p>
     </div>
   </div>
-
   <div class="correction reveal" style="border-color:rgba(183,168,232,.4);background:linear-gradient(135deg,rgba(183,168,232,.09),rgba(183,168,232,.02))">
     <ul>
       <li><b>Was KI nicht ersetzt hat:</b> die Umfrage-Auswertung, die Testrunden und die eigentlichen Produktentscheidungen kamen von uns, keine KI hat für uns getestet oder entschieden.</li>
@@ -990,7 +891,6 @@ Deswegen setzen wir auf ein sauberes, werbefreies Ökosystem, finanziert durch A
     </ul>
   </div>
 </div>
-
 <div id="refs">
   <div class="refs-toggle" id="refsToggle" onclick="toggleRefs()">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
@@ -1020,11 +920,9 @@ Deswegen setzen wir auf ein sauberes, werbefreies Ökosystem, finanziert durch A
     <div class="refitem"><b>Google.</b> (2026). Gemini [Bildgenerierungsmodell]. Genutzt für erste Bildentwürfe der Persona Vicky und des Flowly-Logos. https://gemini.google.com</div>
   </div>
 </div>
-
 <div id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </div>
-
 <script>
 const secIds = ['s0','s1','s2','s3','s4','s5','s6','s7','steam','s8'];
 const links = document.querySelectorAll('.chaplink');
@@ -1085,7 +983,6 @@ function runCounters(){
     requestAnimationFrame(frame);
   });
 }
-// ── Demo-Szenen, 1:1 aus demo_prototype_final.html übernommen ──
 const DEMO = [
   {title:'Überblick: das Flowly-Dashboard', sub:'Alles auf einen Blick: Lernstand, Live-Community, Fächer und was gerade dringend wartet.',
    callouts:[['Startpunkt','Das Dashboard zeigt sofort den Lernstand: <b>172 Minuten heute</b>, 89 Karten, 7 Konzepte.'],['Gamification','XP-Balken, Level und Streak, sichtbares Feedback statt Selbsteinschätzung.']],
@@ -1134,7 +1031,7 @@ const input = document.getElementById('searchInput');
 const countEl = document.getElementById('searchCount');
 document.addEventListener('keydown',e=>{ if(e.key==='/' && document.activeElement!==input){ e.preventDefault(); input.focus(); } });
 let searchable=[];
-document.querySelectorAll('.card, .idxcard, .riskcard, .tl-q, .acc, .rat, .elig-card, .sci-row, .demo-callout, tr').forEach(el=>searchable.push({el,text:el.textContent.toLowerCase()}));
+document.querySelectorAll('.card, .idxcard, .riskcard, .tl-q, .acc, .rat, .elig-card, .sci-row, .demo-callout, .pricecard, tr').forEach(el=>searchable.push({el,text:el.textContent.toLowerCase()}));
 input.addEventListener('input',()=>{
   const q=input.value.trim().toLowerCase();
   if(!q){ searchable.forEach(s=>s.el.classList.remove('hide')); countEl.classList.remove('show'); return; }
@@ -1144,51 +1041,6 @@ input.addEventListener('input',()=>{
   countEl.classList.add('show');
 });
 setTimeout(()=>window.dispatchEvent(new Event('scroll')), 80);
-</script>
-  <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const searchInput = document.getElementById('searchInput');
-  const searchCount = document.getElementById('searchCount');
-  
-  // Alle Elemente, die durchsucht und gefiltert werden sollen
-  const searchableElements = document.querySelectorAll('.card, .idxcard, tbody tr, .acc, .rat, .riskcard, .pricecard');
-
-  searchInput.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase().trim();
-    let matchCount = 0;
-
-    // Wenn das Suchfeld leer ist, alles wieder anzeigen und Zähler ausblenden
-    if (query === '') {
-      searchableElements.forEach(el => el.classList.remove('hide'));
-      searchCount.classList.remove('show');
-      return;
-    }
-
-    // Elemente filtern
-    searchableElements.forEach(el => {
-      const text = el.textContent.toLowerCase();
-      
-      if (text.includes(query)) {
-        el.classList.remove('hide');
-        matchCount++;
-      } else {
-        el.classList.add('hide');
-      }
-    });
-
-    // Suchzähler aktualisieren und anzeigen
-    searchCount.textContent = `${matchCount} ${matchCount === 1 ? 'Ergebnis' : 'Ergebnisse'} gefunden`;
-    searchCount.classList.add('show');
-  });
-
-  // Optional: Shortcut-Funktion für deine "/" Anzeige im UI
-  window.addEventListener('keydown', (e) => {
-    if (e.key === '/' && document.activeElement !== searchInput) {
-      e.preventDefault();
-      searchInput.focus();
-    }
-  });
-});
 </script>
 </body>
 </html>
