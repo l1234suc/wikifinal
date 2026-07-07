@@ -1145,5 +1145,50 @@ input.addEventListener('input',()=>{
 });
 setTimeout(()=>window.dispatchEvent(new Event('scroll')), 80);
 </script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('searchInput');
+  const searchCount = document.getElementById('searchCount');
+  
+  // Alle Elemente, die durchsucht und gefiltert werden sollen
+  const searchableElements = document.querySelectorAll('.card, .idxcard, tbody tr, .acc, .rat, .riskcard, .pricecard');
+
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    let matchCount = 0;
+
+    // Wenn das Suchfeld leer ist, alles wieder anzeigen und Zähler ausblenden
+    if (query === '') {
+      searchableElements.forEach(el => el.classList.remove('hide'));
+      searchCount.classList.remove('show');
+      return;
+    }
+
+    // Elemente filtern
+    searchableElements.forEach(el => {
+      const text = el.textContent.toLowerCase();
+      
+      if (text.includes(query)) {
+        el.classList.remove('hide');
+        matchCount++;
+      } else {
+        el.classList.add('hide');
+      }
+    });
+
+    // Suchzähler aktualisieren und anzeigen
+    searchCount.textContent = `${matchCount} ${matchCount === 1 ? 'Ergebnis' : 'Ergebnisse'} gefunden`;
+    searchCount.classList.add('show');
+  });
+
+  // Optional: Shortcut-Funktion für deine "/" Anzeige im UI
+  window.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement !== searchInput) {
+      e.preventDefault();
+      searchInput.focus();
+    }
+  });
+});
+</script>
 </body>
 </html>
